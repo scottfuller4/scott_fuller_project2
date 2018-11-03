@@ -1,0 +1,9 @@
+.footer {
+    background: $textColor;
+    &__text {
+        color: white;
+        margin: 0;
+        text-align: center;
+        padding: 15px 0;
+    }
+}

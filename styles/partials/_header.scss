@@ -1,0 +1,49 @@
+.header {
+    background: $mainBlue;
+    // height: 90vh;
+    &__nav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0 50px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link,
+    &__logo {
+        padding: 0 30px;
+    }
+    &__anchor {
+        text-decoration: none;
+        color: $textColor;
+        @include headingSize(20);
+    }
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    &__image {
+        max-height: 100%;
+        box-shadow: 20px 20px white;
+        display: block;
+    }
+}
+
+.test {
+    height: 100%;
+}
+
+.header__title {
+    display: flex;
+    position: relative;
+    .title__one--large {
+        @include headingSize(160);
+    }
+    .header__circle-text {
+        position: absolute;
+        right: -60px;
+        top: 90px;
+        // transform: rotate(-30deg);
+    }
+}

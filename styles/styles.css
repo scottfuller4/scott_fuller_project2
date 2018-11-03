@@ -131,3 +131,210 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 2rem; }
+
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto; }
+
+.title__one {
+  font-size: 80px;
+  font-size: 8rem;
+  color: #171717;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.title__two {
+  font-size: 42px;
+  font-size: 4.2rem;
+  color: #171717;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+.title__three {
+  font-size: 32px;
+  font-size: 3.2rem;
+  color: #171717;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin: 0; }
+
+.title__four {
+  font-size: 24px;
+  font-size: 2.4rem;
+  color: #171717;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.body-font {
+  font-size: 20px;
+  font-size: 2rem;
+  color: #171717;
+  font-family: "Cabin", sans-serif;
+  line-height: 3.2rem;
+  padding-bottom: 20px; }
+
+.btn {
+  background: #f38d8d;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-size: 2rem;
+  color: #171717;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase; }
+
+.header {
+  background: #b9dde7; }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 50px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header__link, .header__logo {
+    padding: 0 30px; }
+  .header__anchor {
+    text-decoration: none;
+    color: #171717;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #171717;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .container__image {
+    max-height: 100%;
+    -webkit-box-shadow: 20px 20px white;
+    box-shadow: 20px 20px white;
+    display: block; }
+
+.test {
+  height: 100%; }
+
+.header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .header__title .title__one--large {
+    font-size: 160px;
+    font-size: 16rem;
+    color: #171717;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase; }
+  .header__title .header__circle-text {
+    position: absolute;
+    right: -60px;
+    top: 90px; }
+
+.about {
+  background: #f6f6f6; }
+  .about__container {
+    padding: 100px 0;
+    width: 55%; }
+
+.about__hero-image {
+  background-image: url(../assets/home-image-2.jpg);
+  background-size: cover;
+  height: 500px;
+  width: 100%; }
+
+.info {
+  background: #f6f6f6;
+  padding: 100px 0; }
+  .info__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .info__section {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .info__icon {
+    background: #b9dde7;
+    font-size: 3.2rem;
+    display: block;
+    padding: 20px;
+    border-radius: 50%; }
+  .info__copy {
+    padding: 10px 20px; }
+
+.personal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.personal__item {
+  width: 50%; }
+  .personal__item .personal__image {
+    max-width: 100%; }
+
+.journey {
+  padding: 150px 0 100px 0;
+  background: #f6f6f6; }
+  .journey__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .journey__image-container {
+    width: 25%;
+    margin-top: 15px; }
+  .journey__image {
+    max-width: 100%;
+    -webkit-box-shadow: 20px 20px #227284;
+    box-shadow: 20px 20px #227284; }
+  .journey__text-container {
+    width: 75%;
+    padding-left: 100px; }
+
+.gallery {
+  padding: 100px 0; }
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .gallery__item {
+    width: calc(100% / 3); }
+  .gallery__image {
+    max-width: 100%;
+    margin: 0 25px; }
+
+.footer {
+  background: #171717; }
+  .footer__text {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 15px 0; }

@@ -10,112 +10,126 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about.html">About</a></li>
-                <li>Harper</li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <header class="header">
+        <nav>
+            <ul class="header__nav">
+                <li class="header__link header__link--active"><a href="index.html" class="header__anchor">Home</a></li>
+                <li class="header__link"><a href="#about.html" class="header__anchor">About</a></li>
+                <li class="header__logo title__two">Harper</li>
+                <li class="header__link"><a href="blog.html" class="header__anchor">Blog</a></li>
+                <li class="header__link"><a href="contact.html" class="header__anchor">Contact</a></li>
             </ul>
-            <img src="./assets/home-image-1.jpg" alt="Headshot of girl surrounded by pink and blue balloons">
-            <div>
-                <img src="./assets/Circle text.png" alt="Everyday life with">
-                <h1>Harper</h1>
+        </nav>
+        <div class="wrapper container">
+            <div class="test">
+                <img src="./assets/home-image-1.jpg" alt="Headshot of girl surrounded by pink and blue balloons" class="container__image">
+            </div>
+            <div class="header__title header__title--home">
+                <h1 class="title__one title__one--large">Harper</h1>
+                <img src="./assets/circle-text.png" alt="Everyday life with" class="header__circle-text">
             </div>
         </div>
     </header>
 
     <main>
-        <section>
-            <div class="wrapper">
-                <h2>Who's Harper?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut esse recusandae laudantium similique repellendus, ut ratione, unde obcaecati repellat in dolore possimus voluptatibus nisi porro libero iste. Eum, voluptatem at?</p>
-                <a href="#about.html">Find out more</a>
+        <section class="about">
+            <div class="wrapper about__container">
+                <h2 class="title__two">Who's Harper?</h2>
+                <p class="body-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut esse recusandae laudantium similique repellendus, ut ratione, unde obcaecati repellat in dolore possimus voluptatibus nisi porro libero iste. Eum, voluptatem at?</p>
+                <a href="#about.html" class="btn about__btn">Find out more</a>
             </div>
-            <div>
+            <div class="about__hero-image">
                 <!-- background image goes here -->
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <div>
+        <section class="info">
+            <div class="wrapper info__container">
+                <div class="info__section">
                     <div>
-                        <i class="fas fa-image"></i>
+                        <i class="fas fa-image info__icon"></i>
                     </div>
-                    <h3>Photos</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex
-                    asperiores voluptatibus hic impedit.</p>
+                    <div class="info__copy">
+                        <h3 class="title__three">Photos</h3>
+                        <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex
+                        asperiores voluptatibus hic impedit.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="info__section">
                     <div>
-                        <i class="fas fa-user-alt"></i>
+                        <i class="fas fa-user-alt info__icon"></i>
                     </div>
-                    <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    <div class="info__copy">
+                        <h3 class="title__three">About</h3>
+                        <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="info__section">
                     <div>
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-desktop info__icon"></i>
                     </div>
-                    <h3>Blog</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    <div class="info__copy">
+                        <h3 class="title__three">Blog</h3>
+                        <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    </div>
                 </div>
-                <div>
+                <div class="info__section">
                     <div>
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone info__icon"></i>
                     </div>
-                    <h3>Contact Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    <div class="info__copy">
+                        <h3 class="title__three">Contact Me</h3>
+                        <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt fuga ex facere dignissimos? Expedita ex asperiores voluptatibus hic impedit.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <div>
-                    <img src="./assets/home-image-3.jpg" alt="Two surfers catching a wave during a pink sunset">
+        <section class="personal">
+            <div class="wrapper personal__container">
+                <div class="personal__item">
+                    <img src="./assets/home-image-3.jpg" alt="Two surfers catching a wave during a pink sunset" class="personal__image">
                 </div>
-                <div>
-                    <h3>Harper's Travels</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis esse praesentium neque veniam, ipsa inventore quaerat nisi eligendi odio possimus illum, quae consequuntur vero. Quibusdam eius modi laborum quia reiciendis.</p>
-                    <a href="#">Read more</a>
+                <div class="personal__item text-container">
+                    <h3 class="title__three">Harper's Travels</h3>
+                    <p class="body-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis esse praesentium neque veniam, ipsa inventore quaerat nisi eligendi odio possimus illum, quae consequuntur vero. Quibusdam eius modi laborum quia reiciendis.</p>
+                    <a href="#" class="btn personal__btn">Read more</a>
                 </div>
-                <div>
-                    <h3>Favourite Things</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aspernatur officia alias unde. Voluptatibus laudantium tempora dolor distinctio? Aperiam qui laudantium nostrum, aliquam odit obcaecati voluptatum veniam expedita odio placeat?</p>
-                    <a href="#">Read more</a>
+                <div class="personal__item text-container">
+                    <h3 class="title__three">Favourite Things</h3>
+                    <p class="body-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aspernatur officia alias unde. Voluptatibus laudantium tempora dolor distinctio? Aperiam qui laudantium nostrum, aliquam odit obcaecati voluptatum veniam expedita odio placeat?</p>
+                    <a href="#" class="btn personal__btn personal__btn--right">Read more</a>
                 </div>
-                <div>
-                    <img src="./assets/home-image-4.jpg" alt="Industrial red brick building with six ventilation pipes during a sunset that fades from pink to blue">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="wrapper">
-                <img src="./assets/home-image-5.jpg" alt="Photo of a smiling girl with dark brown hair wearing a floral shirt">
-                <div>
-                    <h2>Harper's Journey</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam, ipsum nihil voluptas exercitationem modi accusantium explicabo fuga tenetur iusto quasi eveniet nam voluptatum eaque eum, vitae corporis quod officia cupiditate enim? Deserunt quos rerum officiis quod tenetur eos rem deleniti ab vitae cum. Aliquid quae eius sed possimus deserunt?</p>
-                    <a href="#">Find out more</a>
+                <div class="personal__item personal__image">
+                    <img src="./assets/home-image-4.jpg" alt="Industrial red brick building with six ventilation pipes during a sunset that fades from pink to blue" class="personal__image">
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="wrapper">
-                <img src="./assets/home-image-6.jpg" alt="Cotton candy pink house with white trim on a cloudless day">
-                <img src="./assets/home-image-7.jpg" alt="Plane flying into clouds with pink light rays illuminating the sky">
-                <img src="./assets/home-image-8.jpg" alt="Whispy cloud in the sky with a cotton candy pink hue">
+        <section class="journey">
+            <div class="wrapper journey__container">
+                <div class="journey__image-container">
+                    <img src="./assets/home-image-5.jpg" alt="Photo of a smiling girl with dark brown hair wearing a floral shirt" class="journey__image">
+                </div>
+                <div class="journey__text-container">
+                    <h2 class="title__two">Harper's Journey</h2>
+                    <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam, ipsum nihil voluptas exercitationem modi accusantium explicabo fuga tenetur iusto quasi eveniet nam voluptatum eaque eum, vitae corporis quod officia cupiditate enim? Deserunt quos rerum officiis quod tenetur eos rem deleniti ab vitae cum. Aliquid quae eius sed possimus deserunt?</p>
+                    <a href="#" class="btn journey__btn">Find out more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="wrapper gallery__container">
+                <img src="./assets/home-image-6.jpg" alt="Cotton candy pink house with white trim on a cloudless day" class="gallery__image">
+                <img src="./assets/home-image-7.jpg" alt="Plane flying into clouds with pink light rays illuminating the sky" class="gallery__image">
+                <img src="./assets/home-image-8.jpg" alt="Whispy cloud in the sky with a cotton candy pink hue" class="gallery__image">
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Copyright &copy; 2018 HackerYou</p>
+    <footer class="footer">
+        <p class="body-font footer__text">Copyright &copy; 2018 HackerYou</p>
     </footer>
     
 </body>

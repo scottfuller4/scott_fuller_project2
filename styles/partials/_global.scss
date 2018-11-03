@@ -1,7 +1,70 @@
 $textColor: #171717;
 $accentColor: #f38d8d;
-$mainBlue: #68b0c1;
+$mainBlue: #b9dde7;
 $darkBlue: #227284;
-$lightBlue: #b9dde7;
+$lightBlue: #68b0c1;
 $whiteShade: #f6f6f6;
 
+$titleFont: 'Oswald', sans-serif;
+$bodyFont: 'Cabin', sans-serif;
+
+@mixin headingSize($size) {
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;
+    color: $textColor;
+    font-weight: bold;
+    font-family: $titleFont;
+    text-transform: uppercase;
+}
+
+@mixin fontSize($size) {
+    font-size: $size * 1px;
+    font-size: ($size / 10) * 1rem;
+    color: $textColor;
+    font-family: $bodyFont;
+    line-height: 3.2rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title__one {
+    @include headingSize(80);
+}
+
+.title__two {
+    @include headingSize(42);
+    margin: 0;
+}
+
+.title__three {
+    @include headingSize(32);
+    margin: 0;
+}
+
+.title__four {
+    @include headingSize(24);
+}
+
+.body-font {
+    @include fontSize(20);
+    padding-bottom: 20px;
+}
+
+.btn {
+    background: $accentColor;
+    text-decoration: none;
+    padding: 10px 25px;
+    @include headingSize(20);
+}

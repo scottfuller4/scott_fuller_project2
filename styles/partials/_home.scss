@@ -1,0 +1,84 @@
+.about {
+    background: $whiteShade;
+    &__container {
+        padding: 100px 0;
+        width: 55%;
+    }
+}
+
+.about__hero-image {
+    background-image: url(../assets/home-image-2.jpg);
+    // display: block;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.info {
+    background: $whiteShade;
+    padding: 100px 0;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__section {
+        width: 50%;
+        display: flex;
+    }
+    &__icon {
+        background: $mainBlue;
+        font-size: 3.2rem;
+        display: block;
+        padding: 20px;
+        border-radius: 50%;
+    }
+    &__copy {
+        padding: 10px 20px;
+    }
+}
+
+.personal__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal__item {
+    width: 50%;
+    .personal__image {
+        max-width: 100%;
+    }
+}
+
+.journey {
+    padding: 150px 0 100px 0;
+    background: $whiteShade;
+    &__container {
+        display: flex;
+    }
+    &__image-container {
+        width: 25%;
+        margin-top: 15px;
+    }
+    &__image {
+        max-width: 100%;
+        box-shadow: 20px 20px $darkBlue;
+    }
+    &__text-container {
+        width: 75%;
+        padding-left: 100px;
+    }
+}
+
+.gallery {
+    padding: 100px 0;
+    &__container {
+        display: flex;
+    }
+    &__item {
+        width: calc(100% / 3);
+    }
+    &__image {
+        max-width: 100%;
+        margin: 0 25px;
+    }
+}
