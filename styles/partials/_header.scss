@@ -1,13 +1,14 @@
 .header {
-    background: $mainBlue;
+    // background: $mainBlue;
     // height: 90vh;
     &__nav {
         display: flex;
         list-style: none;
         margin: 0;
-        padding: 20px 0 50px 0;
+        padding: 10px 0;
         justify-content: center;
         align-items: center;
+        background: $mainBlue;
     }
     &__link,
     &__logo {
@@ -18,6 +19,10 @@
         color: $textColor;
         @include headingSize(20);
     }
+}
+
+.header--large {
+    background: $mainBlue;
 }
 
 .container {

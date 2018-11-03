@@ -55,6 +55,7 @@ body {
 
 .title__four {
     @include headingSize(24);
+    margin: 0;
 }
 
 .body-font {
@@ -67,4 +68,5 @@ body {
     text-decoration: none;
     padding: 10px 25px;
     @include headingSize(20);
+    border: none;
 }

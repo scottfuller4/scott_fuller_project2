@@ -1,0 +1,148 @@
+.header {
+    // height: 00px;
+    position: relative;
+}
+
+.header__blog {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.header-title {
+    position: absolute;
+    bottom: -50px;
+    margin: 0;
+}
+
+.main {
+    background: $whiteShade;
+    .body-font {
+        margin: 0;
+    }
+}
+
+.main-container {
+    display: flex;
+    padding: 100px 0;
+}
+
+.aside {
+    width: 30%;
+    &-section {
+        padding: 25px;
+        background: white;
+        margin-bottom: 25px;
+        &__image {
+            max-width: 100%;
+            display: block;
+        }
+        .body-font {
+            padding: 0;
+        }
+    }
+}
+
+.aside-section .title__four {
+    margin: 15px 0;
+}
+
+.recent-post {
+    padding-left: 25px;
+    margin: 0;
+    &__item {
+        line-height: 3.2rem;
+        padding-left: 10px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $textColor;
+    }
+}
+
+.main__content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    .post {
+        padding: 10px 25px 50px 25px;
+        background: white;
+        border-bottom: 5px solid $darkBlue;
+    }
+}
+
+.comment {
+    display: flex;
+    padding: 25px 25px 35px 25px;
+    background: white;
+    margin: 20px 0;
+    &__thumb {
+        width: 10%;
+    }
+    &__photo {
+        max-width: 100%;
+        display: block;
+    }
+    &__copy {
+        width: 90%;
+        padding-left: 25px;
+    }
+}
+
+.comment:nth-child(2) {
+    border-bottom: 5px solid $darkBlue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    &__name,
+    &__email {
+        width: 50%;
+    }
+    &__name {
+        margin-right: 20px;
+    }
+    &__comment {
+        height: 300px;
+    }
+}
+
+.form-info {
+    display: flex;
+}
+
+.form-item {
+    border: none;
+    padding: 30px;
+    margin-bottom: 20px;
+    @include fontSize(20);
+}
+
+.header__contact {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    &__link {
+        text-decoration: none;
+        color: $darkBlue;
+        font-size: 2.5rem;
+    }
+}
+
+.aside-section__contact .title__four {
+    text-transform: lowercase;
+}
+
+.aside-section__contact .body-font {
+    margin: 5px 0;
+}

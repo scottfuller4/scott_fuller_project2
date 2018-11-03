@@ -11,77 +11,91 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about.html">About</a></li>
-                <li>Harper</li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <header class="header header__blog">
+        <nav>
+            <ul class="header__nav">
+                <li class="header__link header__link"><a href="index.html" class="header__anchor">Home</a></li>
+                <li class="header__link"><a href="#about.html" class="header__anchor">About</a></li>
+                <li class="header__logo title__two">Harper</li>
+                <li class="header__link header__link--active"><a href="blog.html" class="header__anchor">Blog</a></li>
+                <li class="header__link"><a href="contact.html" class="header__anchor">Contact</a></li>
             </ul>
-            <h1>Blog</h1>
+        </nav>
+        <div class="wrapper">
+            <h1 class="title__one header-title">Blog</h1>
         </div>
     </header>
 
-    <main>
-        <aside>
-            <div>
-                <img src="./assets/blog-image-2.jpg" alt="Girl laying on the group beside a teal wall wearing a fuzzy pink sweater and raising her right arm">
-                <h4>About Harper</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate ipsa ea. Find out more.</p>
-            </div>
-            <div>
-                <h4>Recent posts</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div>
-        </aside>
-
-        <section>
-            <article>
-                <h2>My Favourite Travel Destinations</h2>
-                <p>Monday October 8th, 2018 by Harper</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas, sapiente dignissimos nobis repellendus tenetur placeat soluta rem ex animi totam sit consectetur pariatur a facere quasi fugit, ea iusto.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, cupiditate soluta? Maxime quidem tempore amet animi in ullam, officia eligendi et aliquam quisquam ratione voluptas! Id, non? Dicta adipisci, consequatur cumque tempora aut nesciunt est reprehenderit beatae exercitationem pariatur iusto?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, odio eos. Impedit debitis iusto voluptas dolore sunt reiciendis voluptates amet veritatis, minus velit asperiores in obcaecati deleniti tenetur delectus vero porro, laboriosam at id aliquam eius quis facilis? Necessitatibus beatae, rem esse laboriosam natus sed odio neque tempore eligendi deserunt! Animi, nihil quia cum at praesentium obcaecati sed saepe molestiae quasi. Cum esse, fugiat dignissimos qui rem reprehenderit illo ullam.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, unde. Blanditiis exercitationem placeat culpa ipsum natus, autem reiciendis, sapiente obcaecati voluptates voluptate nostrum perspiciatis ad?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas repellendus suscipit ab illum inventore numquam voluptatibus similique? Laboriosam, commodi repudiandae ab quibusdam aspernatur eius sint quod unde, incidunt alias cum culpa nihil, ea fugiat?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque incidunt ratione ex quidem libero dicta, dolorum praesentium consequatur ullam labore magnam veniam id tempore eos. Vero eaque, iusto accusantium eos animi doloribus error ratione cupiditate blanditiis nihil non dolores et repudiandae dignissimos reiciendis hic officia iure totam eligendi? Veniam iure vel quia, numquam aliquid quibusdam eius aliquam id! Culpa.</p>
-            </article>
-            <div>
-                <div>
-                    <img src="./assets/blog-image-3.jpg" alt="thumbnail image of girl with black bob hair cut on pink background">
-                    <p>Tuesday october 9th, 2018 by Maggie</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium veritatis nisi aliquam nulla ullam, nostrum neque iste consequatur ipsa quae alias assumenda est, a sed placeat magnam perferendis ipsum.</p>
+    <main class="main">
+        <div class="wrapper main-container">
+            <aside class="aside">
+                <div class="aside-section">
+                    <img src="./assets/blog-image-2.jpg" alt="Girl laying on the group beside a teal wall wearing a fuzzy pink sweater and raising her right arm" class="aside-section__image">
+                    <h4 class="title__four">About Harper</h4>
+                    <p class="body-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate ipsa ea. Find out more.</p>
                 </div>
-                <div>
-                    <img src="./assets/blog-image-4.jpg" alt="thumbnail image of girl wearing a blue floppy hat blowing pink bubble gum">
-                    <p>Wednesday October 10th, 2018 by Daisy</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid eos, veritatis excepturi a perferendis commodi corporis et dolorum ad sunt alias ipsam delectus magni!</p>
+                <div class="aside-section">
+                    <h4 class="title__four">Recent posts</h4>
+                    <ul class="recent-post">
+                        <li class="recent-post__item"><a href="#" class="recent-post__link">Lorem ipsum dolor sit</a></li>
+                        <li class="recent-post__item"><a href="#" class="recent-post__link">Lorem ipsum dolor sit</a></li>
+                        <li class="recent-post__item"><a href="#" class="recent-post__link">Lorem ipsum dolor sit</a></li>
+                        <li class="recent-post__item"><a href="#" class="recent-post__link">Lorem ipsum dolor sit</a></li>
+                    </ul>
                 </div>
-            </div>
-            <form action="" method="post">
-                <label for="name"></label>
-                <input type="text" id="name" placeholder="Name">
+            </aside>
 
-                <label for="email"></label>
-                <input type="email" id="email" placeholder="Email address">
+            <section class="main__content">
+                <article class="post">
+                    <h2 class="title__two">My Favourite Travel Destinations</h2>
+                    <p class="body-font">Monday October 8th, 2018 by Harper</p>
+                    <p class="body-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus voluptas, sapiente dignissimos nobis repellendus tenetur placeat soluta rem ex animi totam sit consectetur pariatur a facere quasi fugit, ea iusto.</p>
+                    <p class="body-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, cupiditate soluta? Maxime quidem tempore amet animi in ullam, officia eligendi et aliquam quisquam ratione voluptas! Id, non? Dicta adipisci, consequatur cumque tempora aut nesciunt est reprehenderit beatae exercitationem pariatur iusto?</p>
+                    <p class="body-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, odio eos. Impedit debitis iusto voluptas dolore sunt reiciendis voluptates amet veritatis, minus velit asperiores in obcaecati deleniti tenetur delectus vero porro, laboriosam at id aliquam eius quis facilis? Necessitatibus beatae, rem esse laboriosam natus sed odio neque tempore eligendi deserunt! Animi, nihil quia cum at praesentium obcaecati sed saepe molestiae quasi. Cum esse, fugiat dignissimos qui rem reprehenderit illo ullam.</p>
+                    <p class="body-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, unde. Blanditiis exercitationem placeat culpa ipsum natus, autem reiciendis, sapiente obcaecati voluptates voluptate nostrum perspiciatis ad?</p>
+                    <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas repellendus suscipit ab illum inventore numquam voluptatibus similique? Laboriosam, commodi repudiandae ab quibusdam aspernatur eius sint quod unde, incidunt alias cum culpa nihil, ea fugiat?</p>
+                    <p class="body-font">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque incidunt ratione ex quidem libero dicta, dolorum praesentium consequatur ullam labore magnam veniam id tempore eos. Vero eaque, iusto accusantium eos animi doloribus error ratione cupiditate blanditiis nihil non dolores et repudiandae dignissimos reiciendis hic officia iure totam eligendi? Veniam iure vel quia, numquam aliquid quibusdam eius aliquam id! Culpa.</p>
+                </article>
+                <div>
+                    <div class="comment">
+                        <div class="comment__thumb">
+                            <img src="./assets/blog-image-3.jpg" alt="thumbnail image of girl with black bob hair cut on pink background" class="comment__photo">
+                        </div>
+                        <div class="comment__copy">
+                            <p class="body-font">Tuesday October 9th, 2018 by Maggie</p>
+                            <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus praesentium veritatis nisi aliquam nulla ullam, nostrum neque iste consequatur ipsa quae alias assumenda est, a sed placeat magnam perferendis ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment__thumb">
+                            <img src="./assets/blog-image-4.jpg" alt="thumbnail image of girl wearing a blue floppy hat blowing pink bubble gum" class="comment__photo">
+                        </div>
+                        <div class="comment__copy">
+                            <p class="body-font">Wednesday October 10th, 2018 by Daisy</p>
+                            <p class="body-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid eos, veritatis excepturi a perferendis commodi corporis et dolorum ad sunt alias ipsam delectus magni!</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="" method="post" class="form">
+                    <div class="form-info">
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="Name" class="form-item form__name">
+    
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email address" class="form-item form__email">
+                    </div>
 
-                <label for="comment"></label>
-                <input type="text" id="comment" placeholder="Comment">
+                    <label for="comment"></label>
+                    <textarea name="blog-comments" placeholder="Comment" class="form-item form__comment" id="comment"></textarea>
 
-                <button>Post comment</button>
-            </form>
-        </section>
+                    <button class="btn form__btn">Post comment</button>
+                </form>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>Copyright &copy; 2018 HackerYou</p>
+    <footer class="footer">
+        <p class="body-font footer__text">Copyright &copy; 2018 HackerYou</p>
     </footer>
     
 </body>
