@@ -13,16 +13,16 @@
     <header class="header header--large">
         <nav>
             <ul class="header__nav">
-                <li class="header__link header__link--active"><a href="index.html" class="header__anchor">Home</a></li>
+                <li class="header__link"><a href="index.html" class="header__anchor header__link--active">Home</a></li>
                 <li class="header__link"><a href="#about.html" class="header__anchor">About</a></li>
                 <li class="header__logo title__two">Harper</li>
                 <li class="header__link"><a href="blog.html" class="header__anchor">Blog</a></li>
                 <li class="header__link"><a href="contact.html" class="header__anchor">Contact</a></li>
             </ul>
         </nav>
-        <div class="wrapper container">
-            <div class="test">
-                <img src="./assets/home-image-1.jpg" alt="Headshot of girl surrounded by pink and blue balloons" class="container__image">
+        <div class="wrapper header-container">
+            <div class="header-image-container">
+                <img src="./assets/home-image-1.jpg" alt="Headshot of girl surrounded by pink and blue balloons" class="header__image">
             </div>
             <div class="header__title header__title--home">
                 <h1 class="title__one title__one--large">Harper</h1>
@@ -86,7 +86,27 @@
         </section>
 
         <section class="personal">
-            <div class="wrapper personal__container">
+            <div class="personal__section personal__section--top">
+                <div class="wrapper personal__travels">
+                    <div class="personal__item">
+                        <img src="./assets/home-image-3.jpg" alt="Two surfers catching a wave during a pink sunset" class="personal__image">
+                    </div>
+                    <div class="personal__item personal__item--copy">
+                        <h3 class="title__three">Harper's Travels</h3>
+                        <p class="body-font">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis esse praesentium neque veniam,
+                            ipsa inventore quaerat nisi eligendi odio possimus illum, quae consequuntur vero. Quibusdam eius modi laborum quia
+                            reiciendis.</p>
+                        <a href="#" class="btn personal__btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="personal__section personal__section--bottom">
+
+            </div>
+
+
+
+            <!-- <div class="wrapper personal__container">
                 <div class="personal__item">
                     <img src="./assets/home-image-3.jpg" alt="Two surfers catching a wave during a pink sunset" class="personal__image">
                 </div>
@@ -103,7 +123,7 @@
                 <div class="personal__item personal__image">
                     <img src="./assets/home-image-4.jpg" alt="Industrial red brick building with six ventilation pipes during a sunset that fades from pink to blue" class="personal__image">
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="journey">
@@ -124,7 +144,7 @@
                 <div class="gallery__item">
                     <img src="./assets/home-image-6.jpg" alt="Cotton candy pink house with white trim on a cloudless day" class="gallery__image">
                 </div>
-                <div class="gallery__item">
+                <div class="gallery__item gallery__item--middle">
                     <img src="./assets/home-image-7.jpg" alt="Plane flying into clouds with pink light rays illuminating the sky" class="gallery__image">
                 </div>
                 <div class="gallery__item">

@@ -1,6 +1,4 @@
 .header {
-    // background: $mainBlue;
-    // height: 90vh;
     &__nav {
         display: flex;
         list-style: none;
@@ -21,17 +19,34 @@
     }
 }
 
+.header__link--active {
+    color: white;
+}
+
 .header--large {
     background: $mainBlue;
 }
 
-.container {
+.header-container {
     margin: 0 auto;
     display: flex;
-    &__image {
+    flex-wrap: no-wrap;
+    align-items: center;
+    justify-content: space-around;
+    // &__image {
+    //     max-height: 100%;
+    //     box-shadow: 20px 20px white;
+    //     display: block;
+    // }
+}
+
+.header-image-container {
+    height: 80vh;
+    .header__image {
         max-height: 100%;
+        position: relative;
+        top: 50px;
         box-shadow: 20px 20px white;
-        display: block;
     }
 }
 

@@ -226,19 +226,33 @@ body {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
 
+.header__link--active {
+  color: white; }
+
 .header--large {
   background: #b9dde7; }
 
-.container {
+.header-container {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .container__image {
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+  flex-wrap: no-wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.header-image-container {
+  height: 80vh; }
+  .header-image-container .header__image {
     max-height: 100%;
+    position: relative;
+    top: 50px;
     -webkit-box-shadow: 20px 20px white;
-    box-shadow: 20px 20px white;
-    display: block; }
+    box-shadow: 20px 20px white; }
 
 .test {
   height: 100%; }
@@ -263,8 +277,9 @@ body {
 .about {
   background: #f6f6f6; }
   .about__container {
-    padding: 100px 0;
-    width: 55%; }
+    padding: 100px 0 100px 50%;
+    width: 100%;
+    margin: 0; }
 
 .about__hero-image {
   background-image: url(../assets/home-image-2.jpg);
@@ -295,17 +310,38 @@ body {
   .info__copy {
     padding: 10px 20px; }
 
-.personal__container {
+.personal__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+
+.personal__section--top {
+  background: -webkit-gradient(linear, left top, right top, from(#227284), color-stop(51%, #227284), color-stop(51%, transparent));
+  background: -webkit-linear-gradient(left, #227284, #227284 51%, transparent 51%);
+  background: -o-linear-gradient(left, #227284, #227284 51%, transparent 51%);
+  background: linear-gradient(to right, #227284, #227284 51%, transparent 51%); }
+
+.personal__travels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .personal__item {
   width: 50%; }
   .personal__item .personal__image {
     max-width: 100%; }
+
+.personal__item--copy {
+  padding: 100px 0 100px 100px; }
+
+.text-container {
+  padding: 100px; }
 
 .journey {
   padding: 150px 0 100px 0;
@@ -335,7 +371,10 @@ body {
     width: calc(100% / 3); }
   .gallery__image {
     max-width: 100%;
-    margin: 0 25px; }
+    display: block; }
+
+.gallery__item--middle {
+  margin: 0 25px; }
 
 .header {
   position: relative; }

@@ -1,14 +1,14 @@
 .about {
     background: $whiteShade;
     &__container {
-        padding: 100px 0;
-        width: 55%;
+        padding: 100px 0 100px 50%;
+        width: 100%;
+        margin: 0;
     }
 }
 
 .about__hero-image {
     background-image: url(../assets/home-image-2.jpg);
-    // display: block;
     background-size: cover;
     height: 500px;
     width: 100%;
@@ -37,16 +37,34 @@
     }
 }
 
-.personal__container {
+.personal__section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+}
+
+.personal__section--top {
+    background: linear-gradient(to right, $darkBlue, $darkBlue 51%, transparent 51%);
+}
+
+.personal__travels {
+    display: flex;
 }
 
 .personal__item {
     width: 50%;
     .personal__image {
         max-width: 100%;
+
     }
+}
+
+.personal__item--copy {
+    padding: 100px 0 100px 100px;
+}
+
+.text-container {
+    padding: 100px;
 }
 
 .journey {
@@ -79,6 +97,10 @@
     }
     &__image {
         max-width: 100%;
-        margin: 0 25px;
+        display: block;
     }
+}
+
+.gallery__item--middle {
+    margin: 0 25px;
 }
