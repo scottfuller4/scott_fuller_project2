@@ -33,11 +33,6 @@
     flex-wrap: no-wrap;
     align-items: center;
     justify-content: space-around;
-    // &__image {
-    //     max-height: 100%;
-    //     box-shadow: 20px 20px white;
-    //     display: block;
-    // }
 }
 
 .header-image-container {
@@ -64,6 +59,5 @@
         position: absolute;
         right: -60px;
         top: 90px;
-        // transform: rotate(-30deg);
     }
 }

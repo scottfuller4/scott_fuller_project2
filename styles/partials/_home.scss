@@ -10,7 +10,7 @@
 .about__hero-image {
     background-image: url(../assets/home-image-2.jpg);
     background-size: cover;
-    height: 500px;
+    height: 50vh;
     width: 100%;
 }
 
@@ -37,18 +37,37 @@
     }
 }
 
-.personal__section {
+// Personal styles 
+
+.personal__container {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.personal__section--top {
-    background: linear-gradient(to right, $darkBlue, $darkBlue 51%, transparent 51%);
-}
-
-.personal__travels {
+.personal__container-half {
     display: flex;
+}
+
+.personal__container--top {
+    background: linear-gradient(to right, $lightBlue, $lightBlue 51%, transparent 51%, transparent 100%);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 30px;
+}
+
+.personal__item-1 {
+    // position: relative;
+    // bottom: 30px;
+}
+
+.personal__container--bottom {
+    background: linear-gradient(to right, transparent, transparent 51%, $mainBlue 51%, $mainBlue 100%);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 70px;
 }
 
 .personal__item {
@@ -59,13 +78,27 @@
     }
 }
 
-.personal__item--copy {
-    padding: 100px 0 100px 100px;
+.text-container--top {
+    padding: 100px 0 0 100px;
 }
 
-.text-container {
-    padding: 100px;
+.text-container--bottom {
+    padding: 0 100px 100px 0;
 }
+
+.personal__image--top {
+    position: relative;
+    bottom: 15px;
+    overflow: visible;
+}
+
+
+.personal__image--bottom {
+    position: relative;
+    bottom: 15px;
+}
+
+// Journey Styles
 
 .journey {
     padding: 150px 0 100px 0;
@@ -86,6 +119,8 @@
         padding-left: 100px;
     }
 }
+
+// Gallery styles
 
 .gallery {
     padding: 100px 0;

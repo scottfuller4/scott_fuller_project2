@@ -1,5 +1,4 @@
 .header {
-    // height: 00px;
     position: relative;
 }
 
@@ -37,6 +36,12 @@
         &__image {
             max-width: 100%;
             display: block;
+        }
+        &__link {
+            text-decoration: none;
+            color: $darkBlue;
+            display: inline-block;
+            font-weight: bold;
         }
         .body-font {
             padding: 0;
@@ -95,15 +100,25 @@
     border-bottom: 5px solid $darkBlue;
 }
 
+.form-item {
+    border: none;
+    padding: 30px;
+    margin-bottom: 20px;
+    @include fontSize(20);
+}
+
 .form {
     display: flex;
     flex-direction: column;
     &__name,
     &__email {
-        width: 50%;
+        width: calc(50% - 10px);
     }
     &__name {
         margin-right: 20px;
+    }
+    &__email {
+        padding-right: 0;
     }
     &__comment {
         height: 300px;
@@ -112,13 +127,6 @@
 
 .form-info {
     display: flex;
-}
-
-.form-item {
-    border: none;
-    padding: 30px;
-    margin-bottom: 20px;
-    @include fontSize(20);
 }
 
 .header__contact {
