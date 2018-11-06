@@ -37,72 +37,57 @@
     }
 }
 
-// Personal styles 
+// Personal section styles 
 
 .personal__container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
+    &--half {
+        display: flex;
+        // justify-content: space-between;
+    }
 }
 
-.personal__container-half {
-    display: flex;
-}
-
-.personal__container--top {
-    background: linear-gradient(to right, $lightBlue, $lightBlue 51%, transparent 51%, transparent 100%);
-    background-size: 100% 90%;
-    background-repeat: no-repeat;
+.personal__container-top--half {
+    align-items: center;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
 }
 
-.personal__item-1 {
-    // position: relative;
-    // bottom: 30px;
-}
-
-.personal__container--bottom {
-    background: linear-gradient(to right, transparent, transparent 51%, $mainBlue 51%, $mainBlue 100%);
-    background-size: 100% 90%;
-    background-repeat: no-repeat;
+.personal__container-bottom--half {
     position: relative;
-    top: 70px;
+    top: 50px;
+    align-items: center;
 }
 
 .personal__item {
     width: 50%;
     .personal__image {
         max-width: 100%;
-
+        display: block;
     }
 }
 
+.personal__image--top {
+    box-shadow: 20px 20px $lightBlue, -200px 20px $lightBlue, -500px 20px $lightBlue;
+}
+
 .text-container--top {
-    padding: 100px 0 0 100px;
-    position: relative;
-    top: 30px;
+    margin: 50px 0 0 100px;
+}
+
+.personal__image--bottom {
+    box-shadow: 20px 20px $mainBlue, 200px 20px $mainBlue, 500px 20px $mainBlue;
 }
 
 .text-container--bottom {
     padding: 0 100px 100px 0;
-    position: relative;
-    bottom: 70px;
-}
-
-.personal__image--top {
-    position: relative;
-    top: 15px;
-    overflow: visible;
-}
-
-.personal__image--bottom {
-    position: relative;
-    bottom: 15px;
-}
-
-.personal__btn--right {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    .personal__btn--right {
+        align-self: flex-end;
+    }
 }
 
 // Journey Styles

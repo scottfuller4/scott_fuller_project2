@@ -1,36 +1,6 @@
-@media (max-width: 1300px) {
-    .personal__container--top {
-        background-size: 100% 70%;
-        bottom: -30px;
-    }
-
-    .personal__image--top {
-        right: -20px;
-        top: 10px;
-    }
-
-    .text-container--top {
-        top: -50px;
-        padding: 50px 0 0 100px;
-    }
-
-    .personal__container--bottom {
-        background-size: 100% 70%;
-        background-position-y: center;
-        top: 30px;
-    }
-
-    .text-container--bottom {
-        padding: 50px 50px 50px 0;
-    }
-
-    .personal__image--bottom {
-        position: relative;
-        top: 80px;
-    }
-}
-
 @media (max-width: 1000px) {
+    
+    // Index header styles
     .header-container {
         display: block;
     }
@@ -60,14 +30,14 @@
         bottom: 50px;
         right: -65px;
     }
+
+    // Index about styles
     
     .about__container {
         padding-left: 0;
     }
 
-    .personal__container--top {
-        background-size: 100% 50%;
-    }
+    // Blog & Contact main styles
     
     .main-container {
         flex-direction: column-reverse;
@@ -118,66 +88,47 @@
 }
 
 @media (max-width: 920px) {
+    
+    // Index info styles
     .info__section {
         width: 100%;
     }
 
-    .personal {
-        padding: 50px 0 100px 0;
-    }
+    // Index personal section styles
 
-    .personal__container-half {
+    .personal__container--half {
         flex-direction: column;
+        position: static;
+        justify-content: center;
     }
 
-    .personal__container-half--bottom {
+    .personal__container-bottom--half {
         flex-direction: column-reverse;
     }
 
     .personal__item {
         width: 100%;
-        position: static;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .personal__image {
-        position: static;
-    }
-
-    .personal__image--top {
-        box-shadow: 15px 15px $lightBlue;
-    }
-
-    .personal__image--bottom {
-        box-shadow: 15px 15px $mainBlue;
-    }
-
-    .personal__container--top,
-    .personal__container--bottom {
-        background: none;
     }
 
     .text-container {
-        padding: 0;
-        margin: 25px 0;
-        .body-font {
-            margin: 0;
-        }
+        margin: 0;
+        padding: 50px 0;
+        text-align: center;
     }
 
-    .personal__btn {
-        text-align: right;
-        width: auto;
+    .text-container--bottom .personal__btn--right {
+        align-self: center;
     }
-    
+
+    // Blog & Contact header styles
+
     .header__blog,
     .header__contact {
         height: 300px;
     }
     
+    // Blog & Contact main styles
+
     .body-font,
     .recent-post__link {
         font-size: 1.8rem;
@@ -205,10 +156,13 @@
         width: 90%;
     }
 
+    // Index header styles
+
     .header-container__image {
-        // display: none;
         margin: 0 auto;
     }
+
+    // Blog & Contact form styles
 
     .form-info {
         flex-direction: column;
@@ -221,9 +175,9 @@
 }
 
 @media (max-width: 670px) {
+    
+    // Global nav styles
     .header__nav {
-        // flex-direction: column;
-        // align-items: flex-end;
         position: relative;
         padding-top: 60px;
     }
@@ -234,6 +188,7 @@
         top: 0;
     }
 
+    // Index journey section styles
     .journey {
         padding: 50px 0;
     }
@@ -249,11 +204,17 @@
         padding: 0;
     }
 
+    .journey__text-container {
+        text-align: center;
+    }
+
     .journey__image-container {
         display: flex;
         justify-content: center;
         margin-bottom: 25px;
     }
+
+    // Index gallery styles
 
     .gallery__container {
         flex-direction: column;
@@ -269,10 +230,16 @@
         display: flex;
         justify-content: center;
     }
+
+    .gallery__image:hover {
+        flex-grow: 1;
+    }
 }
 
 
 @media (max-width: 612px) {
+    
+    // Index header styles
     .header-container__title {
         bottom: -25px;
         right: 25%;
@@ -286,6 +253,8 @@
         bottom: 30px;
         right: -65px;
     }
+
+    // Blog & Contact aside styles
     
     .aside {
         flex-direction: column;
@@ -307,6 +276,8 @@
 }
 
 @media (max-width: 525px) {
+    
+    // Blog & Contact header styles
     .header__blog,
     .header__contact {
         background: $mainBlue;
@@ -321,6 +292,8 @@
         padding: 0 10px;
     }
 
+    // Blog comment styles
+
     .comment {
         flex-direction: column;
         &__thumb {
@@ -332,6 +305,8 @@
             padding-left: 0;
         }
     }
+
+    // Blog recent posts styles
     
     .recent-post {
         flex-direction: column;
@@ -342,6 +317,8 @@
 }
 
 @media (max-width: 465px) {
+    
+    // Index header styles
     .header-container__image {
         width: 70%;
     }
