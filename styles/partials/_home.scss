@@ -80,22 +80,29 @@
 
 .text-container--top {
     padding: 100px 0 0 100px;
+    position: relative;
+    top: 30px;
 }
 
 .text-container--bottom {
     padding: 0 100px 100px 0;
+    position: relative;
+    bottom: 70px;
 }
 
 .personal__image--top {
     position: relative;
-    bottom: 15px;
+    top: 15px;
     overflow: visible;
 }
-
 
 .personal__image--bottom {
     position: relative;
     bottom: 15px;
+}
+
+.personal__btn--right {
+    text-align: right;
 }
 
 // Journey Styles

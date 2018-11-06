@@ -1,33 +1,72 @@
 @media (max-width: 1300px) {
-    .header-container__image {
-        justify-content: flex-start;
-        width: 30%;
-        height: 100%;
-        padding-bottom: 200px;
+    .personal__container--top {
+        background-size: 100% 70%;
+        bottom: -30px;
+    }
+
+    .personal__image--top {
+        right: -20px;
+        top: 10px;
+    }
+
+    .text-container--top {
+        top: -50px;
+        padding: 50px 0 0 100px;
+    }
+
+    .personal__container--bottom {
+        background-size: 100% 70%;
+        background-position-y: center;
+        top: 30px;
+    }
+
+    .text-container--bottom {
+        padding: 50px 50px 50px 0;
+    }
+
+    .personal__image--bottom {
+        position: relative;
+        top: 80px;
     }
 }
 
 @media (max-width: 1000px) {
-    .header-container__section {
-        height: 100%;
-        width: 100%;
-    }
-
-    .header__image {
-        max-width: 50%;
+    .header-container {
+        display: block;
     }
 
     .header-container__image {
         width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__home-container {
+        position: relative;
     }
 
     .header-container__title {
         position: absolute;
-        bottom: -260px;
+        bottom: -50px;
+        right: 100px;
+    }
+
+    .header-container__title .title__one--large {
+        @include headingSize(130);
+    }
+
+    .header-container__title::after {
+        bottom: 50px;
+        right: -65px;
     }
     
     .about__container {
         padding-left: 0;
+    }
+
+    .personal__container--top {
+        background-size: 100% 50%;
     }
     
     .main-container {
@@ -82,6 +121,57 @@
     .info__section {
         width: 100%;
     }
+
+    .personal {
+        padding: 50px 0 100px 0;
+    }
+
+    .personal__container-half {
+        flex-direction: column;
+    }
+
+    .personal__container-half--bottom {
+        flex-direction: column-reverse;
+    }
+
+    .personal__item {
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .personal__image {
+        position: static;
+    }
+
+    .personal__image--top {
+        box-shadow: 15px 15px $lightBlue;
+    }
+
+    .personal__image--bottom {
+        box-shadow: 15px 15px $mainBlue;
+    }
+
+    .personal__container--top,
+    .personal__container--bottom {
+        background: none;
+    }
+
+    .text-container {
+        padding: 0;
+        margin: 25px 0;
+        .body-font {
+            margin: 0;
+        }
+    }
+
+    .personal__btn {
+        text-align: right;
+        width: auto;
+    }
     
     .header__blog,
     .header__contact {
@@ -115,17 +205,9 @@
         width: 90%;
     }
 
-    .header-container__title .title__one--large {
-        @include headingSize(120);
-    }
-
-    .header-container__title {
-        bottom: -300px;
-        right: 100px;
-    }
-
-    .header-container__title::after {
-        top: 50px;
+    .header-container__image {
+        // display: none;
+        margin: 0 auto;
     }
 
     .form-info {
@@ -144,11 +226,6 @@
         // align-items: flex-end;
         position: relative;
         padding-top: 60px;
-    }
-
-    .header-container__title {
-        bottom: -282px;
-        right: 80px;
     }
 
     .header__logo {
@@ -196,6 +273,20 @@
 
 
 @media (max-width: 612px) {
+    .header-container__title {
+        bottom: -25px;
+        right: 25%;
+    }
+    
+    .header-container__title .title__one--large {
+        @include headingSize(100);
+    }
+
+    .header-container__title::after {
+        bottom: 30px;
+        right: -65px;
+    }
+    
     .aside {
         flex-direction: column;
     }
@@ -216,21 +307,6 @@
 }
 
 @media (max-width: 525px) {
-    .header-container__title {
-        display: none;
-    }
-
-    .header-container__image {
-        width: 900%;
-        // height: 80vh;
-        margin: 0 auto;
-    }
-
-    .header__image {
-        max-width: 100%;
-    }
-
-    
     .header__blog,
     .header__contact {
         background: $mainBlue;
@@ -262,5 +338,15 @@
         .recent-post__item {
             width: 100%;
         }
+    }
+}
+
+@media (max-width: 465px) {
+    .header-container__image {
+        width: 70%;
+    }
+
+    .header-container__title {
+        display: none;
     }
 }
