@@ -25,39 +25,49 @@
 
 .header--large {
     background: $mainBlue;
+    height: 90vh;
 }
 
 .header-container {
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
-    flex-wrap: no-wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
+    &__section {
+        width: 50%;
+        height: 90vh;
+    }
 }
 
-.header-image-container {
-    height: 80vh;
+.header-container__image {
+    display: flex;
+    justify-content: center;
     .header__image {
-        max-height: 100%;
-        position: relative;
-        top: 50px;
+        max-width: 100%;
+        max-height: 90%;
         box-shadow: 20px 20px white;
     }
 }
 
-.test {
-    height: 100%;
-}
-
-.header__title {
-    display: flex;
-    position: relative;
+.header-container__title {
+    justify-content: center;
     .title__one--large {
         @include headingSize(160);
-    }
-    .header__circle-text {
         position: absolute;
-        right: -60px;
-        top: 90px;
+        right: 10px;
     }
+}
+
+.header-container__title::after {
+    content: '';
+    background: url(../assets/circle-text.png);
+    width: 182px;
+    height: 172px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: absolute;
+    right: -40px;
+    top: 90px;
 }

@@ -1,4 +1,35 @@
+@media (max-width: 1300px) {
+    .header-container__image {
+        justify-content: flex-start;
+        width: 30%;
+        height: 100%;
+        padding-bottom: 200px;
+    }
+}
+
 @media (max-width: 1000px) {
+    .header-container__section {
+        height: 100%;
+        width: 100%;
+    }
+
+    .header__image {
+        max-width: 50%;
+    }
+
+    .header-container__image {
+        width: 40%;
+    }
+
+    .header-container__title {
+        position: absolute;
+        bottom: -260px;
+    }
+    
+    .about__container {
+        padding-left: 0;
+    }
+    
     .main-container {
         flex-direction: column-reverse;
     }
@@ -48,6 +79,10 @@
 }
 
 @media (max-width: 920px) {
+    .info__section {
+        width: 100%;
+    }
+    
     .header__blog,
     .header__contact {
         height: 300px;
@@ -80,6 +115,19 @@
         width: 90%;
     }
 
+    .header-container__title .title__one--large {
+        @include headingSize(120);
+    }
+
+    .header-container__title {
+        bottom: -300px;
+        right: 100px;
+    }
+
+    .header-container__title::after {
+        top: 50px;
+    }
+
     .form-info {
         flex-direction: column;
     }
@@ -98,10 +146,51 @@
         padding-top: 60px;
     }
 
+    .header-container__title {
+        bottom: -282px;
+        right: 80px;
+    }
+
     .header__logo {
         align-self: flex-start;
         position: absolute;
         top: 0;
+    }
+
+    .journey {
+        padding: 50px 0;
+    }
+
+    .journey__container {
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    .journey__image-container,
+    .journey__text-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .journey__image-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .gallery__container {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .gallery__item--middle {
+        margin: 25px 0;
+    }
+
+    .gallery__item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -127,17 +216,29 @@
 }
 
 @media (max-width: 525px) {
+    .header-container__title {
+        display: none;
+    }
+
+    .header-container__image {
+        width: 900%;
+        // height: 80vh;
+        margin: 0 auto;
+    }
+
+    .header__image {
+        max-width: 100%;
+    }
+
+    
     .header__blog,
     .header__contact {
         background: $mainBlue;
     }
 
     .header-title {
-        // position: static;
         @include headingSize(55);
         bottom: -35px;
-        // text-align: center;
-        // padding-top: 50px;
     }
 
     .header__link {
