@@ -52,20 +52,23 @@
     flex-wrap: wrap;
     &--half {
         display: flex;
+        align-items: center;
         // justify-content: space-between;
     }
 }
 
-.personal__container-top--half {
-    align-items: center;
+.personal__container-bottom--half {
+    margin-top: 50px;
+}
+
+.personal__image-container--top {
     position: relative;
     bottom: 50px;
 }
 
-.personal__container-bottom--half {
+.personal__image-container--bottom {
     position: relative;
     top: 50px;
-    align-items: center;
 }
 
 .personal__item {
@@ -81,7 +84,7 @@
 }
 
 .text-container--top {
-    margin: 50px 0 0 100px;
+    margin: 75px 0 0 95px;
 }
 
 .personal__image--bottom {
@@ -89,7 +92,7 @@
 }
 
 .text-container--bottom {
-    padding: 0 100px 100px 0;
+    padding: 0 75px 75px 0;
     display: flex;
     flex-direction: column;
     .personal__btn--right {

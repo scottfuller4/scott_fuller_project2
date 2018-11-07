@@ -99,12 +99,18 @@
 
     .personal__container--half {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .personal__image-container {
         position: static;
+        display: flex;
         justify-content: center;
     }
 
     .personal__container-bottom--half {
         flex-direction: column-reverse;
+        margin-top: 0;
     }
 
     .personal__item {
