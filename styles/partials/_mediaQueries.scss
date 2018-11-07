@@ -1,5 +1,4 @@
 @media (max-width: 1000px) {
-    
     // Index header styles
     .header-container {
         display: block;
@@ -320,7 +319,7 @@
     // Blog & Contact header styles
     .header__blog,
     .header__contact {
-        background: $mainBlue;
+        background-position-x: 50%;
     }
 
     .header-title {

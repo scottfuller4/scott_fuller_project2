@@ -449,11 +449,15 @@ body {
 .header {
   position: relative; }
 
-.header__blog {
+.header__blog,
+.header__contact {
   background-image: url(../assets/blog-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px; }
+
+.header__contact {
+  background-image: url(../assets/contact-image-1.jpg); }
 
 .header-title {
   position: absolute;
@@ -499,7 +503,13 @@ body {
     padding-left: 10px; }
   .recent-post__link {
     text-decoration: none;
-    color: #171717; }
+    color: #171717;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.recent-post__item:hover .recent-post__link {
+  color: #f38d8d; }
 
 .main__content {
   width: 70%;
@@ -567,12 +577,6 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
-.header__contact {
-  background-image: url(../assets/contact-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px; }
-
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,7 +587,13 @@ body {
   .social__link {
     text-decoration: none;
     color: #227284;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+
+.social__link:hover {
+  color: #f38d8d; }
 
 .aside-section__contact .title__four {
   text-transform: lowercase; }
@@ -862,7 +872,7 @@ body {
 @media (max-width: 525px) {
   .header__blog,
   .header__contact {
-    background: #b9dde7; }
+    background-position-x: 50%; }
   .header-title {
     font-size: 55px;
     font-size: 5.5rem;
