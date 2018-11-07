@@ -19,13 +19,16 @@
     }
 }
 
+.header__link:hover .header__anchor {
+    border-bottom: 2px solid $accentColor;
+}
+
 .header__link--active {
     color: white;
 }
 
 .header--large {
     background: $mainBlue;
-    height: 90vh;
 }
 
 .header__home-container {

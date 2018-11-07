@@ -35,6 +35,13 @@
     &__copy {
         padding: 10px 20px;
     }
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.info__link:hover .title__three {
+    color: $accentColor;
 }
 
 // Personal section styles 

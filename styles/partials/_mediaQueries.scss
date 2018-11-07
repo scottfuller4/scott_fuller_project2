@@ -35,6 +35,7 @@
     
     .about__container {
         padding-left: 0;
+        text-align: center;
     }
 
     // Blog & Contact main styles
@@ -175,7 +176,27 @@
 }
 
 @media (max-width: 670px) {
-    
+    // Global styles
+    .title__two {
+        @include headingSize(38);
+        margin: 0;
+    }
+
+    .title__three {
+        @include headingSize(30);
+        margin: 0;
+    }
+
+    .title__four {
+        @include headingSize(22);
+        margin: 0;
+    }
+
+    .body-font {
+        @include fontSize(18);
+        padding-bottom: 20px;
+    }
+
     // Global nav styles
     .header__nav {
         position: relative;
@@ -188,6 +209,12 @@
         top: 0;
     }
 
+    .about__container, 
+    .info, 
+    .gallery {
+        padding: 50px 0;
+    }
+
     // Index journey section styles
     .journey {
         padding: 50px 0;
@@ -195,7 +222,6 @@
 
     .journey__container {
         flex-direction: column;
-        // align-items: center;
     }
 
     .journey__image-container,
@@ -223,16 +249,13 @@
 
     .gallery__item--middle {
         margin: 25px 0;
+        display: none;
     }
 
     .gallery__item {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    .gallery__image:hover {
-        flex-grow: 1;
     }
 }
 
@@ -252,6 +275,18 @@
     .header-container__title::after {
         bottom: 30px;
         right: -65px;
+    }
+
+    // Index about styles
+    .about__hero-image {
+        height: 30vh;
+    }
+
+    // Index info styles
+    .info__section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     // Blog & Contact aside styles
@@ -276,7 +311,6 @@
 }
 
 @media (max-width: 525px) {
-    
     // Blog & Contact header styles
     .header__blog,
     .header__contact {
@@ -319,6 +353,10 @@
 @media (max-width: 465px) {
     
     // Index header styles
+    .header__home-container {
+        height: 80vh;
+    }
+
     .header-container__image {
         width: 70%;
     }

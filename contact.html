@@ -15,7 +15,7 @@
         <nav>
             <ul class="header__nav">
                 <li class="header__link header__link"><a href="index.html" class="header__anchor">Home</a></li>
-                <li class="header__link"><a href="#about.html" class="header__anchor">About</a></li>
+                <li class="header__link"><a href="index.html#about" class="header__anchor">About</a></li>
                 <li class="header__logo title__two">Harper</li>
                 <li class="header__link"><a href="blog.html" class="header__anchor">Blog</a></li>
                 <li class="header__link"><a href="contact.html" class="header__anchor header__link--active">Contact</a></li>
@@ -47,14 +47,14 @@
             <section class="main__content">
                 <form action="" method="post" class="form">
                     <div class="form-info">
-                        <label for="name"></label>
+                        <label for="name" class="visuallyhidden">Enter your name</label>
                         <input type="text" id="name" placeholder="Name" class="form-item form__name">
                     
-                        <label for="email"></label>
+                        <label for="email" class="visuallyhidden">Enter your email address</label>
                         <input type="email" id="email" placeholder="Email address" class="form-item form__email">
                     </div>
                 
-                    <label for="comment"></label>
+                    <label for="comment" class="visuallyhidden">Add your message to Harper</label>
                     <textarea name="contact-message" placeholder="Message" class="form-item form__comment" id="comment"></textarea>
                 
                     <button class="btn form__btn">Submit</button>
@@ -64,7 +64,7 @@
     </main>
 
     <footer class="footer">
-        <p class="body-font footer__text">Copyright &copy; 2018 HackerYou</p>
+        <p class="footer__text">Copyright &copy; 2018 HackerYou</p>
     </footer>
 </body>
 </html>

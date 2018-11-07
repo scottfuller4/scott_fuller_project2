@@ -51,6 +51,7 @@ body {
 .title__three {
     @include headingSize(32);
     margin: 0;
+    transition: all 0.3s;
 }
 
 .title__four {
@@ -63,10 +64,20 @@ body {
     padding-bottom: 20px;
 }
 
+.footer__text {
+    @include fontSize(20);
+    color: $whiteShade;
+}
+
 .btn {
     background: $accentColor;
     text-decoration: none;
     padding: 10px 25px;
     @include headingSize(20);
     border: none;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 3px 3px 10px $mainBlue;
 }
